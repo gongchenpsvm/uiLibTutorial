@@ -10,4 +10,8 @@
 #import <DJIUILibrary/DJIUILibrary.h>
 
 @interface DefaultLayoutViewController : DULDefaultLayoutViewController
+@property (nonatomic,strong) NSString* stringAlertTitleConfirm0;
+@property (nonatomic,strong) NSString* stringAlertMessageConfirm0;
+@property (nonatomic,strong) NSString* stringAlertOktextConfirm0;
+
 @end

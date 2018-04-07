@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		24DA688B17702769AAC47E40 /* libPods-UILibraryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 331DA960D2639CB7CBC48BC4 /* libPods-UILibraryDemo.a */; };
+		B719111F203BDC6900E2E516 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B719111E203BDC6900E2E516 /* PlaybackViewController.m */; };
+		B7191122203BF64800E2E516 /* DemoUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B7191120203BF64800E2E516 /* DemoUtility.m */; };
 		B78B78A9201581D2001E25C1 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78B78A820158194001E25C1 /* VideoPreviewer.framework */; };
 		B78B78AA201581D2001E25C1 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B78B78A820158194001E25C1 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B78B78B020158277001E25C1 /* DefaultLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78B78AF20158277001E25C1 /* DefaultLayoutViewController.m */; };
@@ -67,6 +69,10 @@
 
 /* Begin PBXFileReference section */
 		331DA960D2639CB7CBC48BC4 /* libPods-UILibraryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UILibraryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B719111D203BDC6900E2E516 /* PlaybackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		B719111E203BDC6900E2E516 /* PlaybackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
+		B7191120203BF64800E2E516 /* DemoUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoUtility.m; path = "../../../../../Documents/ENGR499 iOS/iOS-PlaybackDemo-master/PlaybackDemo/DemoUtility.m"; sourceTree = "<group>"; };
+		B7191121203BF64800E2E516 /* DemoUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoUtility.h; path = "../../../../../Documents/ENGR499 iOS/iOS-PlaybackDemo-master/PlaybackDemo/DemoUtility.h"; sourceTree = "<group>"; };
 		B78B78A320158193001E25C1 /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
 		B78B78AE20158277001E25C1 /* DefaultLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultLayoutViewController.h; sourceTree = "<group>"; };
 		B78B78AF20158277001E25C1 /* DefaultLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultLayoutViewController.m; sourceTree = "<group>"; };
@@ -166,9 +172,13 @@
 		B7966412201573360029A36D /* UILibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B7191121203BF64800E2E516 /* DemoUtility.h */,
+				B7191120203BF64800E2E516 /* DemoUtility.m */,
 				B7966413201573360029A36D /* AppDelegate.h */,
 				B7966414201573360029A36D /* AppDelegate.m */,
 				B7966419201573360029A36D /* Main.storyboard */,
+				B719111D203BDC6900E2E516 /* PlaybackViewController.h */,
+				B719111E203BDC6900E2E516 /* PlaybackViewController.m */,
 				B796641C201573360029A36D /* Assets.xcassets */,
 				B796641E201573360029A36D /* LaunchScreen.storyboard */,
 				B7966421201573360029A36D /* Info.plist */,
@@ -408,6 +418,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B78B78B020158277001E25C1 /* DefaultLayoutViewController.m in Sources */,
+				B7191122203BF64800E2E516 /* DemoUtility.m in Sources */,
+				B719111F203BDC6900E2E516 /* PlaybackViewController.m in Sources */,
 				B7966423201573360029A36D /* main.m in Sources */,
 				B7966415201573360029A36D /* AppDelegate.m in Sources */,
 			);

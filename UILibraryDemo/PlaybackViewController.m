@@ -4,6 +4,11 @@
 @interface PlaybackViewController ()
 @property (weak, nonatomic) IBOutlet UIView *fpvPreviewView;
 - (IBAction)backBtnClickAction:(id)sender;
+@property (weak)IBOutlet UILabel* DCState;
+@property (weak) IBOutlet UILabel* CVState;
+@property (weak) IBOutlet UILabel* UIState;
+@property (weak) IBOutlet UILabel* FCState;
+@property (weak) IBOutlet UILabel* ECState;
 @end
 
 @implementation PlaybackViewController
@@ -23,7 +28,45 @@
             }
         }];
     }
+    //ec = CreateEC();
+    ec_ptr = [[ExecutiveControl alloc] init];
+    [self.view endEditing:YES];
+
 }
+- (IBAction)sendError:(id)sender {
+     NSString *enteredText = [_errorMessageInput text];
+//    SampleClass *sampleClass = [[SampleClass alloc]init];
+//
+//    /* calling a method to get max value */
+//    ret = [sampleClass max:a andNum2:b];
+    [ec_ptr errorWithError:enteredText];
+    
+}
+- (IBAction)showUpdates:(id)sender {
+    _ECState.text = ec_ptr.sysState;
+    _CVState.text = ec_ptr.sysState;
+    _UIState.text = ec_ptr.sysState;
+    _FCState.text = ec_ptr.sysState;
+    _DCState.text = ec_ptr.sysState;
+}
+- (IBAction)landed:(id)sender {
+    [ec_ptr landingComplete];
+}
+- (IBAction)setTargetCoordinates:(id)sender {
+}
+- (IBAction)targetDenied:(id)sender {
+    [ec_ptr targetConfirmedWithYesNo:false];
+}
+- (IBAction)targetConfirmed:(id)sender {
+    [ec_ptr targetConfirmedWithYesNo:true];
+}
+- (IBAction)targetSelecter:(id)sender {
+    [ec_ptr targetBeingSelected];
+}
+- (IBAction)targetDetected:(id)sender {
+    [ec_ptr targetsBeingDetected];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -39,10 +82,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UITapGestureRecognizer* tapRecognizer = [ [UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapResponder:)];
-    tapRecognizer.numberOfTapsRequired = 1;
-    tapRecognizer.numberOfTouchesRequired = 1;
-    [self.view addGestureRecognizer:tapRecognizer];
+//    UITapGestureRecognizer* tapRecognizer = [ [UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapResponder:)];
+//    tapRecognizer.numberOfTapsRequired = 1;
+//    tapRecognizer.numberOfTouchesRequired = 1;
+//    [self.view addGestureRecognizer:tapRecognizer];
+////
+//    UITapGestureRecognizer *gestureRecognizer = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)] auto];
+//    gestureRecognizer.cancelsTouchesInView = NO; //so that action such as clear text field button can be pressed
+//    [self.view addGestureRecognizer:gestureRecognizer];
+}
+
+- (void) hideKeyboard {
+    [self.view endEditing:YES];
 }
 //- todo
 - (void)tapResponder: (UITapGestureRecognizer *)sender

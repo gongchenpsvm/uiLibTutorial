@@ -13,6 +13,11 @@
 		B78B78A9201581D2001E25C1 /* VideoPreviewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78B78A820158194001E25C1 /* VideoPreviewer.framework */; };
 		B78B78AA201581D2001E25C1 /* VideoPreviewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B78B78A820158194001E25C1 /* VideoPreviewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B78B78B020158277001E25C1 /* DefaultLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78B78AF20158277001E25C1 /* DefaultLayoutViewController.m */; };
+		B7926C08207AC6340014E063 /* FlightControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7926C04207AC6300014E063 /* FlightControl.swift */; };
+		B7926C09207AC6340014E063 /* ComputerVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7926C05207AC6320014E063 /* ComputerVision.swift */; };
+		B7926C0A207AC6340014E063 /* DroneCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7926C06207AC6320014E063 /* DroneCommunication.swift */; };
+		B7926C0B207AC6340014E063 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7926C07207AC6330014E063 /* UserInterface.swift */; };
+		B7926C0D207AC6770014E063 /* ExecutiveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7926C0C207AC6760014E063 /* ExecutiveControl.swift */; };
 		B7966415201573360029A36D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7966414201573360029A36D /* AppDelegate.m */; };
 		B796641B201573360029A36D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7966419201573360029A36D /* Main.storyboard */; };
 		B796641D201573360029A36D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B796641C201573360029A36D /* Assets.xcassets */; };
@@ -76,6 +81,12 @@
 		B78B78A320158193001E25C1 /* VideoPreviewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VideoPreviewer.xcodeproj; path = VideoPreviewer/VideoPreviewer.xcodeproj; sourceTree = "<group>"; };
 		B78B78AE20158277001E25C1 /* DefaultLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultLayoutViewController.h; sourceTree = "<group>"; };
 		B78B78AF20158277001E25C1 /* DefaultLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultLayoutViewController.m; sourceTree = "<group>"; };
+		B7926C03207AC62F0014E063 /* UILibraryDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILibraryDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B7926C04207AC6300014E063 /* FlightControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightControl.swift; path = "../../../../../Documents/ENGR499 iOS/trodroEC/trodroEC/FlightControl.swift"; sourceTree = "<group>"; };
+		B7926C05207AC6320014E063 /* ComputerVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComputerVision.swift; path = "../../../../../Documents/ENGR499 iOS/trodroEC/trodroEC/ComputerVision.swift"; sourceTree = "<group>"; };
+		B7926C06207AC6320014E063 /* DroneCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DroneCommunication.swift; path = "../../../../../Documents/ENGR499 iOS/trodroEC/trodroEC/DroneCommunication.swift"; sourceTree = "<group>"; };
+		B7926C07207AC6330014E063 /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInterface.swift; path = "../../../../../Documents/ENGR499 iOS/trodroEC/trodroEC/UserInterface.swift"; sourceTree = "<group>"; };
+		B7926C0C207AC6760014E063 /* ExecutiveControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExecutiveControl.swift; path = "../../../../../Documents/ENGR499 iOS/trodroEC/trodroEC/ExecutiveControl.swift"; sourceTree = "<group>"; };
 		B7966410201573360029A36D /* UILibraryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UILibraryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7966413201573360029A36D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B7966414201573360029A36D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -172,6 +183,11 @@
 		B7966412201573360029A36D /* UILibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B7926C0C207AC6760014E063 /* ExecutiveControl.swift */,
+				B7926C05207AC6320014E063 /* ComputerVision.swift */,
+				B7926C06207AC6320014E063 /* DroneCommunication.swift */,
+				B7926C04207AC6300014E063 /* FlightControl.swift */,
+				B7926C07207AC6330014E063 /* UserInterface.swift */,
 				B7191121203BF64800E2E516 /* DemoUtility.h */,
 				B7191120203BF64800E2E516 /* DemoUtility.m */,
 				B7966413201573360029A36D /* AppDelegate.h */,
@@ -185,6 +201,7 @@
 				B7966422201573360029A36D /* main.m */,
 				B78B78AE20158277001E25C1 /* DefaultLayoutViewController.h */,
 				B78B78AF20158277001E25C1 /* DefaultLayoutViewController.m */,
+				B7926C03207AC62F0014E063 /* UILibraryDemo-Bridging-Header.h */,
 			);
 			path = UILibraryDemo;
 			sourceTree = "<group>";
@@ -279,6 +296,7 @@
 				TargetAttributes = {
 					B796640F201573360029A36D = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					B7966427201573360029A36D = {
@@ -417,10 +435,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7926C09207AC6340014E063 /* ComputerVision.swift in Sources */,
+				B7926C0A207AC6340014E063 /* DroneCommunication.swift in Sources */,
 				B78B78B020158277001E25C1 /* DefaultLayoutViewController.m in Sources */,
+				B7926C08207AC6340014E063 /* FlightControl.swift in Sources */,
 				B7191122203BF64800E2E516 /* DemoUtility.m in Sources */,
 				B719111F203BDC6900E2E516 /* PlaybackViewController.m in Sources */,
 				B7966423201573360029A36D /* main.m in Sources */,
+				B7926C0B207AC6340014E063 /* UserInterface.swift in Sources */,
+				B7926C0D207AC6770014E063 /* ExecutiveControl.swift in Sources */,
 				B7966415201573360029A36D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,13 +613,18 @@
 			baseConfigurationReference = DF1C850F00BED21B2BB9FC57 /* Pods-UILibraryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UILibraryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gongchen.UILibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UILibraryDemo/UILibraryDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -606,13 +634,17 @@
 			baseConfigurationReference = D99910DDF200F84DE36AEE05 /* Pods-UILibraryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UILibraryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gongchen.UILibraryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UILibraryDemo/UILibraryDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -620,6 +652,7 @@
 		B7966440201573360029A36D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
@@ -635,6 +668,7 @@
 		B7966441201573360029A36D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
@@ -650,6 +684,7 @@
 		B7966443201573360029A36D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
 				INFOPLIST_FILE = UILibraryDemoUITests/Info.plist;
@@ -664,6 +699,7 @@
 		B7966444201573360029A36D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU4RFK35DN;
 				INFOPLIST_FILE = UILibraryDemoUITests/Info.plist;

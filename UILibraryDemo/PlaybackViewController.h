@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface PlaybackViewController : UIViewController
+#import "UILibraryDemo-Swift.h"
+@interface PlaybackViewController : UIViewController{
+    ExecutiveControl* ec_ptr;
+}
 @property (nonatomic,strong) NSString* stringAlertTitleConfirm0;
 @property (nonatomic,strong) NSString* stringAlertMessageConfirm0;
 @property (nonatomic,strong) NSString* stringAlertOktextConfirm0;
@@ -16,4 +18,6 @@
 @property (nonatomic,strong) NSString* stringAlertTitleConfirm1;
 @property (nonatomic,strong) NSString* stringAlertMessageConfirm1;
 @property (nonatomic,strong) NSString* stringAlertOktextConfirm1;
+@property (weak, nonatomic) IBOutlet UITextField *errorMessageInput;
+
 @end

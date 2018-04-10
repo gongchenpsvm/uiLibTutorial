@@ -13,5 +13,6 @@
 @property (nonatomic,strong) NSString* stringAlertTitleConfirm0;
 @property (nonatomic,strong) NSString* stringAlertMessageConfirm0;
 @property (nonatomic,strong) NSString* stringAlertOktextConfirm0;
-
+@property (nonatomic, strong) IBOutlet UILabel *stateLabel;
+@property (nonatomic, strong) NSString *stateName;
 @end

@@ -1,6 +1,6 @@
 #import "PlaybackViewController.h"
 #import "DemoUtility.h"
-
+#import "DefaultLayoutViewController.h"
 @interface PlaybackViewController ()
 @property (weak, nonatomic) IBOutlet UIView *fpvPreviewView;
 - (IBAction)backBtnClickAction:(id)sender;
@@ -92,6 +92,17 @@
 //    [self.view addGestureRecognizer:gestureRecognizer];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showState"]) {
+        NSString *errorMessage = [self.errorMessageInput text];
+        DefaultLayoutViewController* destViewController = segue.destinationViewController;
+        
+        destViewController.stateName = errorMessage;
+    }
+}
+
+
+//todo
 - (void) hideKeyboard {
     [self.view endEditing:YES];
 }

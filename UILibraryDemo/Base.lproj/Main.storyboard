@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="m3d-cu-DiW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ni-Xh-v6Z">
@@ -55,24 +55,32 @@
                                     <action selector="displayCVError" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0E-R4-dNT"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-iN-zD3">
+                                <rect key="frame" x="0.0" y="70" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="TZy-Gu-q3j"/>
                     </view>
                     <connections>
                         <outlet property="playbackBtn" destination="5Ni-Xh-v6Z" id="8wp-0f-XBa"/>
+                        <outlet property="stateLabel" destination="jCU-iN-zD3" id="Czs-TD-4ho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222.63868065967017" y="-212"/>
+            <point key="canvasLocation" x="-242.40000000000001" y="-738.08095952023996"/>
         </scene>
         <!--Playback View Controller-->
         <scene sceneID="ARN-hw-ddr">
             <objects>
                 <viewController id="2PM-UB-oI6" customClass="PlaybackViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Urw-Nq-XrG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Executive Control Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-Ey-ez8">
@@ -270,7 +278,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BACK"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="sb6-5K-r4I" id="gy1-tG-nTt">
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" identifier="showState" popoverAnchorView="sb6-5K-r4I" id="gy1-tG-nTt">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -299,7 +307,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvb-F0-U7K" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="1nj-8S-q4f"/>
             </objects>
-            <point key="canvasLocation" x="-224.4377811094453" y="493.60000000000002"/>
+            <point key="canvasLocation" x="-242" y="1473"/>
         </scene>
     </scenes>
 </document>

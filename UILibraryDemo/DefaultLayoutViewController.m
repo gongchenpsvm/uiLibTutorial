@@ -15,6 +15,8 @@
 @end
 
 @implementation DefaultLayoutViewController
+@synthesize stateLabel;
+@synthesize stateName;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,7 +25,7 @@
     [DJISDKManager registerAppWithDelegate:self];
     [self.playbackBtn setImage:[UIImage imageNamed:@"playback_icon"]
                       forState:UIControlStateNormal];
-    
+    stateLabel.text = stateName;
 }
 
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UILibraryDemo-Swift.h"
-@interface PlaybackViewController : UIViewController{
+@interface PlaybackViewController : UIViewController <UITextFieldDelegate>{
     ExecutiveControl* ec_ptr;
 }
 @property (nonatomic,strong) NSString* stringAlertTitleConfirm0;

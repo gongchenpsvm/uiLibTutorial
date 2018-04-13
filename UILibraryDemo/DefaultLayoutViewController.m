@@ -33,6 +33,7 @@
 {
     [super viewDidAppear:animated];
     [self registerApp];
+    ec_ptr = [[ExecutiveControl alloc] init];
 }
 
 - (void)registerApp
@@ -67,6 +68,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//- (IBAction)sendReadyToLand:(id)sender {
+//
+//}
 
 
 /*5.3 on Gantt chart*/
@@ -130,4 +134,8 @@
 
 
 
+- (IBAction)btnReadyToLand:(id)sender {
+    NSLog(@"Something To Print");
+    [ec_ptr readToLand];
+}
 @end

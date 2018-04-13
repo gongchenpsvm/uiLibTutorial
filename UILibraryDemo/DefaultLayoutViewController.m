@@ -134,8 +134,10 @@
 
 
 
-- (IBAction)btnReadyToLand:(id)sender {
+
+- (IBAction)landBtnAction:(id)sender {
+    stateLabel.text = [NSString stringWithFormat:@"Landing"];
+    printf("hello");
     NSLog(@"Something To Print");
-    [ec_ptr readToLand];
 }
 @end

@@ -56,18 +56,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-iN-zD3">
-                                <rect key="frame" x="0.0" y="70" width="167" height="21"/>
+                                <rect key="frame" x="1" y="82" width="167" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URP-Ui-bR4">
-                                <rect key="frame" x="214" y="8" width="101" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMk-s6-7uS">
+                                <rect key="frame" x="307" y="0.0" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ready To Land"/>
+                                <state key="normal" title="Land"/>
                                 <connections>
-                                    <action selector="btnReadyToLand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0M-Q7-z1X"/>
+                                    <action selector="landBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y33-52-phy"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -13,7 +13,8 @@
 @interface DefaultLayoutViewController : DULDefaultLayoutViewController {
     ExecutiveControl* ec_ptr;
 }
-- (IBAction)btnReadyToLand:(id)sender;
+- (IBAction)landBtnAction:(id)sender;
+
 @property (nonatomic,strong) NSString* stringAlertTitleConfirm0;
 @property (nonatomic,strong) NSString* stringAlertMessageConfirm0;
 @property (nonatomic,strong) NSString* stringAlertOktextConfirm0;
